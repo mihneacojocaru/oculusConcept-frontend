@@ -29,20 +29,33 @@ $fs-4xl: 2.25rem;
 $fs-5xl: 3rem;
 
 //Colors
+
+$color-snow: hsl(26, 100%, 99%);
+
 $fc-dark: #1b1b1b;
 $fc-light: #f0f0f0;
 $fc-gray: #4b4f42;
 
-$main-green: #a5aa9a;
-$green-light-bg: #eeefec;
-$green-light-bg2: #d7d9d2;
-$orange-light: #ef7f6b;
-$blue-dark: #232f3f;
-$darkblue: #232f3f;
-$darkgreen: #3c5140;
-$green-tint: #657c68;
-$green-accent-bg: #265a63;
-$gold-accent: #bba14f;
+$bg-darkBlue: #17212d;
+
+//Stock Colors
+
+$dark-jungle-green: hsl(188, 63%, 7%);
+$prussian-blue: hsl(200, 69%, 14%);
+$raisin-black-1: hsl(227, 29%, 13%);
+$raisin-black-2: hsl(229, 17%, 19%);
+$yellow-green: hsl(89, 72%, 45%);
+$orange-soda: #55af7b;
+$red-listing: #ee2540;
+$cultured-1: hsl(0, 0%, 93%);
+$cultured-2: hsl(192, 24%, 96%);
+$misty-rose: hsl(111, 57%, 91%);
+$alice-blue: hsl(210, 100%, 97%);
+$seashell: hsl(128, 100%, 97%);
+$cadet: hsl(200, 15%, 43%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$opal: hsl(180, 20%, 62%);
 
 //Box-Shaddw
 

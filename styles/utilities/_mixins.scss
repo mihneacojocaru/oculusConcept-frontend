@@ -29,22 +29,8 @@
   }
 }
 
-// Pill-Design
-
-%pill {
-  font-size: $fs-xs;
-  padding: 5px;
-  background-color: $main-green;
-  border-radius: 10px;
-  max-width: fit-content;
-}
-
 //text-sizes
 // @extend %text
-
-%border {
-  border: 1px solid red;
-}
 
 %text-xs {
   font-size: 0.75rem; /* 12px */

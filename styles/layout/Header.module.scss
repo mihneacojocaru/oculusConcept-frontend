@@ -1,5 +1,0 @@
-@use '../utilities/' as *;
-
-.header {
-  @include flexy($dir: row, $align: center, $just: space-between);
-}

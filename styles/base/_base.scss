@@ -14,8 +14,9 @@ h1 {
 //     position: relative;
 // }
 
-body {
+html {
   font-family: $ff-montserat;
+  background-color: $color-snow;
 
   //display: grid;
   // grid-template-rows: 82px 1fr;
@@ -37,4 +38,16 @@ a {
 
 li {
   list-style: none;
+}
+
+button {
+  font: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }

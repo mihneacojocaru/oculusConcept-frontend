@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '../styles/layout/Layout.module.scss';
+
 function Layout({
   title,
   keywords,
@@ -15,9 +15,9 @@ function Layout({
         <meta name="keywords" content={keywords} />
         <title>{title}</title>
       </Head>
-      <div className={styles.layout}>
+      <div className="layout">
         <Header />
-        <main className={styles.main}>{children}</main>
+        <main className="main">{children}</main>
         <Footer />
       </div>
     </>
@@ -27,7 +27,10 @@ function Layout({
 export default Layout;
 
 Layout.defaultProps = {
-  title: 'Website Title',
-  description: 'Website Description',
-  keywords: 'Website Keywords',
+  title:
+    'Oculus Concept GmbH - Businesscoach | Strukturgeber für Organisationen',
+  description:
+    'Strukturgeber für Organisationen und Leadership ✓ Projektmanager ✓ Systemischer Business Coach ✓ Agiler Coach ✓ Oculus Concept GmbH aus Lage ✓ Gunther Kracke ✓',
+  keywords:
+    'Projektmanager Systemischer Business Coach Agiler Coach Oculus Concept GmbH aus Lage',
 };
