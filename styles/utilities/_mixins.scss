@@ -1,0 +1,92 @@
+@use '../utilities/variables' as *;
+
+@mixin flexy($disp: flex, $dir: null, $wrap: null, $just: null, $align: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  align-items: $align;
+}
+
+@mixin mq($break) {
+  $value: map-get(
+    $map: $breakpoints,
+    $key: $break,
+  );
+
+  $sm: map-get($breakpoints, 'sm');
+
+  @if ($value == null) {
+    @error "`#{break}` is not a valid breakpoint";
+  } @else if $value < $sm {
+    @media (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+}
+
+// Pill-Design
+
+%pill {
+  font-size: $fs-xs;
+  padding: 5px;
+  background-color: $main-green;
+  border-radius: 10px;
+  max-width: fit-content;
+}
+
+//text-sizes
+// @extend %text
+
+%border {
+  border: 1px solid red;
+}
+
+%text-xs {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+}
+
+%text-sm {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+%text-base {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+%text-lg {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
+
+%text-xl {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+}
+
+%text-2xl {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+
+%text-3xl {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+}
+
+%text-4xl {
+  font-size: 2.25rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+}
+
+%text-5xl {
+  font-size: 3rem; /* 48px */
+  line-height: 1;
+}

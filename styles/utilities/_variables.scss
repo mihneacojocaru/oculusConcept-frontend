@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$breakpoints: (
+  'xs': 400px,
+  'sm': 640px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1280px,
+  '2xl': 1536px,
+);
+
+$xs: 400px;
+$sm: 640px;
+$md: 768px;
+$lg: 1025px;
+$xl: 1280px;
+$xl2: 1536px;
+
+$ff-montserat: 'Montserrat';
+
+$fs-xs: 0.75rem;
+$fs-sm: 0.875rem;
+$fs-base: 1rem;
+$fs-lg: 1.125rem;
+$fs-xl: 1.25rem;
+$fs-2xl: 1.5rem;
+$fs-3xl: 1.875rem;
+$fs-4xl: 2.25rem;
+$fs-5xl: 3rem;
+
+//Colors
+$fc-dark: #1b1b1b;
+$fc-light: #f0f0f0;
+$fc-gray: #4b4f42;
+
+$main-green: #a5aa9a;
+$green-light-bg: #eeefec;
+$green-light-bg2: #d7d9d2;
+$orange-light: #ef7f6b;
+$blue-dark: #232f3f;
+$darkblue: #232f3f;
+$darkgreen: #3c5140;
+$green-tint: #657c68;
+$green-accent-bg: #265a63;
+$gold-accent: #bba14f;
+
+//Box-Shaddw
+
+$box-shaddow1: 0px 0px 20px rgba(0, 0, 0, 0.2);

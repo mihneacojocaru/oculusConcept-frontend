@@ -1,0 +1,40 @@
+@use '../utilities' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+}
+
+// html,body{
+//     position: relative;
+// }
+
+body {
+  font-family: $ff-montserat;
+
+  //display: grid;
+  // grid-template-rows: 82px 1fr;
+  // grid-template-columns: 360px 1fr;
+
+  // @include mq("sm"){
+  //     grid-template-areas: "nav nav"
+  //                         "sidebar main"  ;
+  // }
+}
+
+// .CookieConsent{
+//     align-items: center !important;
+// }
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
