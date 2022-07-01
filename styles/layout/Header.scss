@@ -44,7 +44,7 @@
       @include flexy($dir: column, $align: center);
       gap: 35px;
       padding: 40px;
-      background-color: $bg-darkBlue;
+      background-color: $blue-500;
       box-shadow: 0 10px 40px hsla(0, 0%, 0%, 0.1);
       transform: scale(0.9);
       //transform-origin: top right;
@@ -63,7 +63,7 @@
         top: -19px;
         right: -20px;
         border: 20px solid transparent;
-        border-left-color: $bg-darkBlue;
+        border-left-color: $blue-500;
         transform: rotate(45deg);
       }
 
@@ -77,6 +77,10 @@
         box-shadow: none;
         padding: 0;
         transition: 0s;
+
+        &::before {
+          display: none;
+        }
       }
     }
 

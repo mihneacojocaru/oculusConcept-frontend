@@ -8,7 +8,7 @@ function Header() {
     {
       text: 'Home',
       link: 'home',
-      offset: -80,
+      offset: -85,
     },
     {
       text: 'Portfolio',
@@ -18,6 +18,11 @@ function Header() {
     {
       text: 'Team',
       link: 'team',
+      offset: -80,
+    },
+    {
+      text: 'Success Stories',
+      link: 'success',
       offset: -80,
     },
     {
@@ -50,7 +55,12 @@ function Header() {
       <div className="container headerContent">
         <Link href="/">
           <a className="header__logo">
-            <Image src="/oculus-concept-logo.png" width={136} height={30} />
+            <Image
+              src="/oculus-concept-logo.png"
+              width={136}
+              height={30}
+              alt="oculus concept logo"
+            />
           </a>
         </Link>
         <nav className="navbar">
