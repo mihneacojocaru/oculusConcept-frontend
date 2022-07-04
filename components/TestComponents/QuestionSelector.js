@@ -96,7 +96,7 @@ export default function QuestionSelector() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g id="triangles" clip-path="url(#clip0_155_4)">
+                  <g id="triangles" clipPath="url(#clip0_155_4)">
                     <g id="lightGroup">
                       <path
                         id="light1"
