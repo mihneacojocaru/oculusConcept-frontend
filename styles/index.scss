@@ -2,3 +2,7 @@
 @use 'utilities';
 @use 'components';
 @use 'layout';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

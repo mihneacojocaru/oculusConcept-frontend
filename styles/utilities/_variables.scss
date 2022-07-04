@@ -28,39 +28,45 @@ $fs-3xl: 1.875rem;
 $fs-4xl: 2.25rem;
 $fs-5xl: 3rem;
 
-//Colors
+//+++ THEME COLORS
 
-$color-snow: hsl(26, 100%, 99%);
+//Font Colors - Theme
 
+$fc-blueDarkHeader: #293d50;
 $fc-dark: #1b1b1b;
-$fc-light: #f0f0f0;
-$fc-gray: #4b4f42;
+$fc-darkGray: #444;
+$fc-lightGray: #a0a0a1;
+$fc-white: #fff;
 
-$bg-darkBlue: #17212d;
-$bg-menuLight: #6d8db4;
+/*******/ // Theme Blue Variations/*******/
 
-$blue-400: #819dbe;
-$blue-500: #6d8db4;
-$blue-600: #587ca9;
+//*******// MAIN ACCENT COLOR
+$blueAccent: #027bff; //ButtonsFull, Logo Symbol, Menu transparency (same blue @0.7)
+$blueAccentLight: #007bff; //Alternative lighter shade
 
-//Stock Colors
+/**/ //Fonts
 
-$dark-jungle-green: hsl(188, 63%, 7%);
-$prussian-blue: hsl(200, 69%, 14%);
-$raisin-black-1: hsl(227, 29%, 13%);
-$raisin-black-2: hsl(229, 17%, 19%);
-$yellow-green: hsl(89, 72%, 45%);
-$orange-soda: #55af7b;
-$red-listing: #ee2540;
-$cultured-1: hsl(0, 0%, 93%);
-$cultured-2: hsl(192, 24%, 96%);
-$misty-rose: hsl(111, 57%, 91%);
-$alice-blue: hsl(210, 100%, 97%);
-$seashell: hsl(128, 100%, 97%);
-$cadet: hsl(200, 15%, 43%);
-$white: hsl(0, 0%, 100%);
-$black: hsl(0, 0%, 0%);
-$opal: hsl(180, 20%, 62%);
+$blueMenuFont: #08468b; //Navbar Menu items & Icons
+$blueLogo: #00366f; //LogoFont
+//**//Backgrounds:
+$whiteBackground: #fff;
+$blueSectionLight: #ecf5ff; //Alternate light color for sections
+$blueMain: #17409e; // Banner bg-dark
+$blueMainLight: #1545b2; //Banner bg-light
+$blueBackground: #004a99; //For the footer
+$blueSectionShade: #00458f; //Cards??
+$blueBannerDark: #17409e;
+$blueBannerLight: #1545b2;
+
+/*******/ // End of Theme Blue Variations/*******/
+
+//*******//Theme Colors 2
+
+$Pink: #ff689b;
+$Yellow: #e8bf04;
+$Turquoise: #40cdc7;
+$Green: #40cf2e;
+$Blue: #4680ff;
 
 //Box-Shaddw
 

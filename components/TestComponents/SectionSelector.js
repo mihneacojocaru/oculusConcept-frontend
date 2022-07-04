@@ -6,10 +6,6 @@ export default function SectionSelector() {
 
   const { currentMode, setCurrentMode } = useStateContext();
 
-  useEffect(() => {
-    console.log(currentMode);
-  });
-
   const text0 = {
     title: 'Initial Text',
     paragraph1: 'This is the first paragraph.',

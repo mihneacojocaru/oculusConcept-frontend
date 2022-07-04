@@ -16,16 +16,7 @@ h1 {
 
 html {
   font-family: $ff-montserat;
-  background-color: $color-snow;
-
-  //display: grid;
-  // grid-template-rows: 82px 1fr;
-  // grid-template-columns: 360px 1fr;
-
-  // @include mq("sm"){
-  //     grid-template-areas: "nav nav"
-  //                         "sidebar main"  ;
-  // }
+  background-color: $whiteBackground;
 }
 
 // .CookieConsent{
@@ -40,14 +31,14 @@ li {
   list-style: none;
 }
 
-button {
-  font: inherit;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
+// button {
+//   font: inherit;
+//   border: none;
+//   background: none;
+//   cursor: pointer;
+// }
 
-.container {
+.containerM {
   max-width: 1440px;
   margin: 0 auto;
 }

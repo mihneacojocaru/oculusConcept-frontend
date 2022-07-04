@@ -1,46 +1,7 @@
 @use '../utilities' as *;
 
 .hero {
-  background-color: $bg-darkBlue;
-  color: $fc-light;
-  padding: 5em 0;
-
-  &__gridContainer {
-    display: grid;
-
-    &--mainSection {
-      @include flexy($dir: column);
-      max-width: 300px;
-      margin: 0 auto;
-      padding: 0 20px;
-      h1 {
-        font-size: $fs-5xl;
-        margin: 10px 0;
-        max-width: 350px;
-      }
-      span {
-        background-color: $fc-light;
-        height: 3px;
-        width: 100%;
-        margin: 10px 0;
-      }
-
-      p {
-        margin: 10px 0;
-      }
-
-      @include mq('sm') {
-        max-width: 350px;
-      }
-
-      @include mq('md') {
-        max-width: 400px;
-      }
-    }
-
-    @include mq('md') {
-      grid-template-rows: 1fr;
-      grid-template-columns: 1fr 1fr;
-    }
-  }
+  background-color: $blueBackground;
+  background: url('../../public/assets/intro-bg.png') center bottom no-repeat;
+  background-size: cover;
 }

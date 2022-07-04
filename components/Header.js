@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { Link as SLikin } from 'react-scroll';
+import { Link as SLink } from 'react-scroll';
 
 function Header() {
   const navLinks = [
@@ -13,22 +13,22 @@ function Header() {
     {
       text: 'Portfolio',
       link: 'portfolio',
-      offset: -80,
+      offset: -90,
     },
     {
       text: 'Team',
       link: 'team',
-      offset: -80,
+      offset: -90,
     },
     {
       text: 'Success Stories',
       link: 'success',
-      offset: -80,
+      offset: -90,
     },
     {
       text: 'Kontakt',
       link: 'kontakt',
-      offset: -80,
+      offset: -90,
     },
   ];
 
@@ -51,14 +51,14 @@ function Header() {
   }, []);
 
   return (
-    <header className="header">
-      <div className="container headerContent">
+    <header className="header shadow-lg">
+      <div className="container mx-auto headerContent">
         <Link href="/">
           <a className="header__logo">
             <Image
-              src="/oculus-concept-logo.png"
-              width={136}
-              height={30}
+              src="/oculus-concept-logo-dark.png"
+              width={180}
+              height={40}
               alt="oculus concept logo"
             />
           </a>
@@ -67,7 +67,7 @@ function Header() {
           <ul className={`navbar-nav ${navbarActive && 'active'}`}>
             {navLinks.map((e, index) => (
               <li key={index}>
-                <SLikin
+                <SLink
                   to={e.link}
                   spy={true}
                   smooth={true}
@@ -76,7 +76,7 @@ function Header() {
                   onClick={() => setNavbarActive(false)}
                 >
                   {e.text}
-                </SLikin>
+                </SLink>
               </li>
             ))}
           </ul>
