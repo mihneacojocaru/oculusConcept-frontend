@@ -10,13 +10,13 @@ h1 {
   margin: 0;
 }
 
-// html,body{
-//     position: relative;
-// }
-
 html {
   font-family: $ff-montserat;
   background-color: $whiteBackground;
+
+  // * {
+  //   border: 1px solid red;
+  // }
 }
 
 // .CookieConsent{
@@ -29,16 +29,4 @@ a {
 
 li {
   list-style: none;
-}
-
-// button {
-//   font: inherit;
-//   border: none;
-//   background: none;
-//   cursor: pointer;
-// }
-
-.containerM {
-  max-width: 1440px;
-  margin: 0 auto;
 }
