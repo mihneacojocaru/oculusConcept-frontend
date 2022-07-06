@@ -17,6 +17,7 @@ module.exports = {
         blueLogo: '#00366f',
         blueSectionLight: '#ecf5ff',
         blueMain: '#17409e',
+        blueBackground: '#004a99',
         Pink: '#ff689b',
         Yellow: '#e8bf04',
         Turquoise: '#40cdc7',

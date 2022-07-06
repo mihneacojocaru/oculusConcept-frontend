@@ -2,36 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { Link as SLink } from 'react-scroll';
+import { navLinks } from '../data/staticData';
 
 function Header() {
-  const navLinks = [
-    {
-      text: 'Home',
-      link: 'home',
-      offset: -85,
-    },
-    {
-      text: 'Portfolio',
-      link: 'portfolio',
-      offset: -90,
-    },
-    {
-      text: 'Team',
-      link: 'team',
-      offset: -90,
-    },
-    {
-      text: 'Success Stories',
-      link: 'success',
-      offset: -90,
-    },
-    {
-      text: 'Kontakt',
-      link: 'kontakt',
-      offset: -90,
-    },
-  ];
-
   const [navbarActive, setNavbarActive] = useState(false);
 
   useEffect(() => {
