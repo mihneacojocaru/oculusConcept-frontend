@@ -10,7 +10,7 @@ export default function Kontakt() {
       className="container mx-auto"
       style={{ minHeight: '50vh' }}
     >
-      <h2 className="text-center font-medium leading-tight text-2xl md:text-3xl lg:text-4xl mb-1 md:mb-5">
+      <h2 className="text-fc-blueDarkHeader text-center font-medium tracking-wide text-2xl md:text-3xl lg:text-4xl mb-1 md:mb-5">
         Kontakt
       </h2>
       <div className="pt-10 grid md:grid-cols-2 items-center justify-items-center">
@@ -26,7 +26,7 @@ export default function Kontakt() {
       <div className="grid md:grid-cols-2">
         <div className="leftContainer w-4/6 sm:w-3/6 md:w-5/6 lg:w-8/12 mt-12 mb-5 justify-self-center">
           <Image
-            src="/assets/email-kontakt2.svg"
+            src="/assets/email-kontakt.svg"
             width={300}
             height={250}
             layout="responsive"

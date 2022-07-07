@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useStateContext } from '../../context/StateContext';
 import Image from 'next/image';
 
-import triangles from '../../public/assets/triangles.svg';
 import Button from '../UtilityElements/Button';
 
 export default function QuestionSelector() {

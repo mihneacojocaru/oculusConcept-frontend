@@ -10,7 +10,7 @@ export default function Hero() {
       <section id="home" className="hero">
         <div className="px-6 lg:py-40 md:px-1 text-white text-center lg:text-left">
           <div className="container mx-auto xl:px-32">
-            <div className="grid lg:grid-cols-2  flex items-center">
+            <div className="grid lg:grid-cols-2 flex items-center">
               <div className="mt-7 lg:mt-0 lg:px-3 flex flex-col items-center lg:items-stretch">
                 <h1 className="text-4xl md:text-6xl xl:text-6xl font-bold tracking-tight mb-7 text-center lg:text-left">
                   Strukturgeber für Organisationen und Leadership

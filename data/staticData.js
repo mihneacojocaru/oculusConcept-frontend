@@ -25,3 +25,28 @@ export const navLinks = [
     offset: -90,
   },
 ];
+
+import img from '../public/assets/blank_profile.png';
+
+export const teamMembers = [
+  {
+    name: 'John Doe',
+    position: 'Teamleiter',
+    img: img,
+  },
+  {
+    name: 'Jane Doe',
+    position: 'CTO',
+    img: img,
+  },
+  {
+    name: 'John Doe',
+    position: 'Marketing',
+    img: img,
+  },
+  {
+    name: 'Jane Doe',
+    position: 'Sales',
+    img: img,
+  },
+];
