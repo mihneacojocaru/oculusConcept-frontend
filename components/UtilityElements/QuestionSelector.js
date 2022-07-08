@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useStateContext } from '../../context/StateContext';
 import Image from 'next/image';
 
+import { useTranslation } from 'next-i18next';
+
 import Button from '../UtilityElements/Button';
 
 export default function QuestionSelector() {
@@ -61,30 +63,29 @@ export default function QuestionSelector() {
     }
   };
 
+  const { t } = useTranslation('question');
+
   return (
     <div className="questionSelector">
       <div onClick={buttonHandler}>
         {showPage.firstPage && (
           <div className="flex flex-col items-center justify-between">
-            <p className="text-xl text-center mt-2 mb-5">
-              Helfen Sie uns, Ihnen die wichtigsten Informationen zu zeigen
-              indem Sie ein paar Quizfragen beantworten.
-            </p>
+            <p className="text-xl text-center mt-2 mb-5">{t('quiz_msg')}</p>
             <div className="w-fit my-3">
               <Image src="/assets/steps-hero.svg" height={200} width={400} />
             </div>
-            <Button id="btnBeginn" text="Beginnen" />
+            <Button id="btnBeginn" text={t('beginnen')} />
           </div>
         )}
         {showPage.secondPage && (
           <>
             <h2 className="font-medium leading-tight text-center text-3xl mt-0 mb-10">
-              Was ist Ihnen wichtiger?
+              {t('was_ist_wichtiger')}
             </h2>
             <div className="question1Container grid justify-items-center md:grid-cols-2 md:gap-10">
               <div className="aktion grid justify-items-center">
                 <h5 className="font-medium leading-tight text-xl text-center mb-3">
-                  Aktion
+                  {t('aktion')}
                 </h5>
                 <svg
                   id="btnAktion"
@@ -221,7 +222,7 @@ export default function QuestionSelector() {
 
               <div className="stabilitaet grid justify-items-center">
                 <h5 className="font-medium leading-tight text-xl text-center mb-3">
-                  Stabilität
+                  {t('stabilitaet')}
                 </h5>
                 <svg
                   id="btnStabil"
@@ -450,12 +451,12 @@ export default function QuestionSelector() {
         {showPage.thirdPage && (
           <>
             <h2 className="font-medium leading-tight text-center text-3xl mt-0 mb-10">
-              Was ist Ihnen wichtiger?
+              {t('was_ist_wichtiger')}
             </h2>
             <div className="question1Container grid justify-items-center  md:grid-cols-2 md:gap-10">
               <div className="afugaben grid justify-items-center">
                 <h5 className="font-medium leading-tight text-xl text-center mb-3">
-                  Aufgabenorientierung
+                  {t('aufgaben')}
                 </h5>
                 <svg
                   id="btnAufgaben"
@@ -635,7 +636,7 @@ export default function QuestionSelector() {
 
               <div className="menschen grid justify-items-center">
                 <h5 className="font-medium leading-tight text-xl text-center mb-3">
-                  Menschenorientierung
+                  {t('menschen')}
                 </h5>
                 <svg
                   id="btnMenschen"
@@ -816,14 +817,14 @@ export default function QuestionSelector() {
         {showPage.fourthPage && (
           <div className="messageContainer grid justify-items-center">
             <h2 className="font-medium leading-tight text-center text-xl mt-0">
-              Danke für Ihre Antwort!
+              {t('danke')}
             </h2>
             <div className="w-fit my-3">
               <Image src="/assets/finish.svg" height={200} width={400} />
             </div>
 
-            <p>Die Website zeigt nun Inhalte basierend auf Ihrer Auswahl an.</p>
-            <Button id="resetSelection" text="Zurücksetzen" />
+            <p>{t('selection')}</p>
+            <Button id="resetSelection" text={t('zuruecksetzen')} />
           </div>
         )}
       </div>

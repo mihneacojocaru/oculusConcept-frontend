@@ -1,5 +1,6 @@
-import { ContextProvider } from '../context/StateContext';
 import '../styles/index.scss';
+import { appWithTranslation } from 'next-i18next';
+import { ContextProvider } from '../context/StateContext';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -9,4 +10,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

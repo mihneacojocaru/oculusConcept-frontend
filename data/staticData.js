@@ -1,26 +1,31 @@
 export const navLinks = [
   {
     text: 'Home',
+    textEn: 'Home',
     link: 'home',
     offset: -85,
   },
   {
     text: 'Portfolio',
+    textEn: 'Portfolio',
     link: 'portfolio',
     offset: -90,
   },
   {
     text: 'Team',
+    textEn: 'Team',
     link: 'team',
     offset: -90,
   },
   {
-    text: 'Success Stories',
+    text: 'Erfolgsgeschichten',
+    textEn: 'Success Stories',
     link: 'success',
     offset: -90,
   },
   {
     text: 'Kontakt',
+    textEn: 'Contact',
     link: 'kontakt',
     offset: -90,
   },

@@ -7,6 +7,17 @@ import Team from '../components/PageSections/Team/Team';
 import SuccesStories from '../components/PageSections/SuccessStories/SuccessStories';
 import Kontakt from '../components/PageSections/Kontakt';
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'question'])),
+      // Will be passed to the page component as props
+    },
+  };
+}
+
 export default function Home() {
   return (
     <div>

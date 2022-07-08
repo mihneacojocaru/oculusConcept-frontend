@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import { Link as SLink } from 'react-scroll';
 
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+
 import { navLinks } from '../data/staticData';
 
 import { SiXing } from 'react-icons/si';
@@ -8,6 +11,8 @@ import { ImFacebook } from 'react-icons/im';
 import { FaLinkedinIn } from 'react-icons/fa';
 
 function Footer() {
+  const router = useRouter();
+
   const year = new Date().getFullYear();
 
   return (
@@ -46,7 +51,16 @@ function Footer() {
             </li>
           ))}
         </ul>
-        <div className="legal">
+        <div className="options flex flex-row flex-wrap">
+          <ul className="flex flex-row">
+            {router.locales.map((locale) => (
+              <li className="px-2" key={locale}>
+                <Link href={router.asPath} locale={locale}>
+                  <a className="uppercase">{locale}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
           <div className="">
             {/* <span className="px-2 border-r-2">Blog</span> */}
             <a className="px-2 border-r-2 cursor-pointer">Impressum</a>
