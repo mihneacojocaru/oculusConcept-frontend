@@ -1,15 +1,13 @@
-import Image from 'next/image';
 import { Link as SLink } from 'react-scroll';
-
-import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import { navLinks } from '../data/staticData';
 
 import { SiXing } from 'react-icons/si';
 import { ImFacebook } from 'react-icons/im';
 import { FaLinkedinIn } from 'react-icons/fa';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Footer() {
   const [optionsActive, setOptionsActive] = useState(false);
@@ -17,10 +15,6 @@ function Footer() {
   const router = useRouter();
 
   const year = new Date().getFullYear();
-
-  const clickHandler = () => {
-    setOptionsActive(!optionsActive);
-  };
 
   return (
     <footer className="bg-blueBackground text-white">
@@ -60,50 +54,23 @@ function Footer() {
         </ul>
         <div className="options flex flex-row flex-wrap items-center justify-center">
           <div className="language flex flex-row px-2 ">
-            <div className="relative inline-block text-left">
-              <div>
-                <button
-                  type="button"
-                  className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-fc-dark shadow-sm hover:bg-blueSectionLight focus:outline-none"
-                  onClick={clickHandler}
-                >
-                  Sprache
-                  <svg
-                    className="-mr-1 ml-2 h-5 w-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </button>
-              </div>
-
-              {optionsActive && (
-                <div className="absolute top-8 right-0 mt-2 w-10 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                  {router.locales.map((locale) => (
-                    <div
-                      className="px-2 block rounded-md py-1 text-sm text-fc-dark"
-                      key={locale}
-                    >
-                      <Link
-                        onClick={clickHandler}
-                        href={router.asPath}
-                        locale={locale}
-                      >
-                        <a className="uppercase">{locale}</a>
-                      </Link>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+            {router.locale === 'de' ? (
+              <Link href={router.asPath} locale={'en'}>
+                <a className="flex flex-row items-center">
+                  English
+                  <span className="text-2xl ml-2">&#127468;&#127463;</span>
+                </a>
+              </Link>
+            ) : (
+              <Link href={router.asPath} locale={'de'}>
+                <a className="flex flex-row items-center">
+                  Deutsch
+                  <span className="text-2xl ml-2">&#127465;&#127466;</span>
+                </a>
+              </Link>
+            )}
           </div>
-          <div className="">
+          <div className="legal">
             {/* <span className="px-2 border-r-2">Blog</span> */}
             <a className="px-2 border-r-2 border-l-2 cursor-pointer">
               Impressum

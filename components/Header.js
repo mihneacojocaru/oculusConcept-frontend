@@ -3,9 +3,12 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { Link as SLink } from 'react-scroll';
 import { navLinks } from '../data/staticData';
+import { useRouter } from 'next/router';
 
 function Header() {
   const [navbarActive, setNavbarActive] = useState(false);
+
+  const router = useRouter();
 
   useEffect(() => {
     if (navbarActive) document.body.style.overflow = 'hidden';
@@ -21,6 +24,10 @@ function Header() {
     return () => {
       window.removeEventListener('resize', () => {});
     };
+  }, []);
+
+  useEffect(() => {
+    console.log(router.locale);
   }, []);
 
   return (
@@ -48,7 +55,7 @@ function Header() {
                   duration={500}
                   onClick={() => setNavbarActive(false)}
                 >
-                  {e.text}
+                  {router.locale === 'de' ? e.text : e.textEn}
                 </SLink>
               </li>
             ))}
