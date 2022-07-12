@@ -10,12 +10,12 @@ export default function Portfolio() {
   const { currentMode } = useStateContext();
 
   return (
-    <div id="portfolio">
+    <section id="portfolio">
       {currentMode === 'standard' && <PortfolioStandard />}
       {currentMode === 'modeD' && <PortfolioModeD />}
       {currentMode === 'modeI' && <PortfolioModeI />}
       {currentMode === 'modeG' && <PortfolioModeG />}
       {currentMode === 'modeS' && <PortfolioModeS />}
-    </div>
+    </section>
   );
 }

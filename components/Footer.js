@@ -26,7 +26,7 @@ function Footer() {
             </div>
           </a>
           <a href="">
-            <div className="border-2 transition-all borrder-white text-xl bg-white hover:bg-blueBackground  text-blueBackground hover:text-white  rounded-full p-2 m-2">
+            <div className="border-2 transition-all borrder-white text-xl bg-white hover:bg-blueBackground  text-blueBackground hover:text-white rounded-full p-2 m-2">
               <SiXing />
             </div>
           </a>

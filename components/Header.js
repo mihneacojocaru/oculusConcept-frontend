@@ -26,10 +26,6 @@ function Header() {
     };
   }, []);
 
-  useEffect(() => {
-    console.log(router.locale);
-  }, []);
-
   return (
     <header className="header shadow-lg">
       <div className="container mx-auto headerContent">
