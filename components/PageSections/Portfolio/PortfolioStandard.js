@@ -46,14 +46,14 @@ export default function PortfolioStandard() {
     <div className="container mx-auto my-10">
       <div className="headerText w-5/6 md:w-4/6 lg:w-8/12 mx-auto">
         <h3 className="text-fc-blueDarkHeader text-center font-medium tracking-wide text-2xl md:text-3xl lg:text-4xl mb-1 md:mb-5">
-          Awesome Title
+          Portfolio Standard
         </h3>
         <p className="text-center my-3">
           Et harum quidem rerum facilis est et expedita distinctio nam libero
           tempore cum soluta nobis eligendi cumque.
         </p>
       </div>
-      <div className="card1">
+      <div className="card1 my-5 lg:my-0">
         <div className="flex flex-col md:flex-row items-center">
           <div className=" leftContainer w-4/6 lg:w-7/12">
             <Image
@@ -123,8 +123,16 @@ export default function PortfolioStandard() {
           </div>
         ) : null}
       </div>
-      <div className="card2">
+      <div className="card2 my-5 lg:my-0">
         <div className="flex flex-col md:flex-row items-center">
+          <div className="rightContainer w-4/6 lg:w-7/12 md:order-2">
+            <Image
+              src="/assets/Sections/team2.svg"
+              width={300}
+              height={250}
+              layout="responsive"
+            />
+          </div>
           <div className="leftContainer w-4/6 lg:w-8/12 lg:px-14">
             <p className="flex flex-row items-center uppercase mb-3">
               <BsStars className="text-blueAccent text-2xl" /> Creative Subtitle
@@ -154,14 +162,6 @@ export default function PortfolioStandard() {
             >
               {clicked.state && clicked.id === 2 ? 'Close' : 'Read More'}
             </button>
-          </div>
-          <div className="rightContainer w-4/6 lg:w-7/12">
-            <Image
-              src="/assets/Sections/team2.svg"
-              width={300}
-              height={250}
-              layout="responsive"
-            />
           </div>
         </div>
         {clicked.id === 2 && clicked.state ? (
@@ -193,7 +193,7 @@ export default function PortfolioStandard() {
           </div>
         ) : null}
       </div>
-      <div className="card3">
+      <div className="card3 my-5 lg:my-0">
         <div className="flex flex-col md:flex-row items-center">
           <div className=" leftContainer w-4/6 lg:w-7/12">
             <Image
